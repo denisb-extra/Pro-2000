@@ -1,0 +1,103 @@
+
+header {
+  .header-inner {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px 0 20px;
+      .menu-cont{
+        width: 520px;
+        .main-menu{
+          display: flex;
+          justify-content: space-between;
+          @include f-r;
+          font-size: 18px;
+           li{
+             a{
+               color: #090B24;
+             }
+           }
+        }
+      }
+    .part-left{
+      width: 563px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+            .cont-icons{
+              width: 112px;
+              display: flex;
+              justify-content:space-around;
+              align-items: center;
+              .icon{
+                color: #2C3136;
+                .fa{
+                  font-size: 28px;
+                }
+              }
+            }
+          .cont-tel{
+            .tel-info{
+              font-size: 20px;
+              color: #2C3136;
+              @include f-r;
+            }
+            .tel{
+              @include f-b;
+              font-size: 24px;
+              color: #18B794;
+            }
+          }
+          .lang{
+            width: 55px;
+            height: 55px;
+            margin-top: 30px;
+            .select{
+              font-size: 20px;
+              @include f-m;
+              text-align: end;
+                a{
+                  color: #2C3136;
+                }
+              svg{
+                margin-left: 7px;
+              }
+            }
+            .list{
+              display: none;
+              text-align: end;
+              padding-top: 10px;
+              .item-list{
+                font-size: 20px;
+                @include f-m;
+                a{
+                  color: #2C3136;
+                }
+              }
+            }
+            .list:hover{
+              display: block;
+            }
+            .select:hover + .list {
+              display: block;
+            }
+          }
+    }
+  }
+}
+
+section.slider-top{
+  height: 797px;
+  .slide{
+    width: 100%;
+    height: 100%;
+    .item{
+        img{
+          width: 1920px;
+          height: 785px;
+        }
+    }
+  }
+}
