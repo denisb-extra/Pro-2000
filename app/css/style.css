@@ -66,74 +66,141 @@ header .header-inner {
       font-size: 18px; }
       header .header-inner .menu-cont .main-menu li a {
         color: #090B24; }
-  header .header-inner .part-left {
-    width: 563px;
+
+header .part-left {
+  width: 563px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  header .part-left .cont-icons {
+    width: 112px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-    header .header-inner .part-left .cont-icons {
-      width: 112px;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center; }
-      header .header-inner .part-left .cont-icons .icon {
-        color: #2C3136; }
-        header .header-inner .part-left .cont-icons .icon .fa {
-          font-size: 28px; }
-    header .header-inner .part-left .cont-tel .tel-info {
+    header .part-left .cont-icons .icon {
+      color: #2C3136; }
+      header .part-left .cont-icons .icon .fa {
+        font-size: 28px; }
+  header .part-left .cont-tel .tel-info {
+    font-size: 20px;
+    color: #2C3136;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400; }
+  header .part-left .cont-tel .tel {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: #18B794; }
+  header .part-left .lang {
+    width: 55px;
+    height: 55px;
+    margin-top: 30px; }
+    header .part-left .lang .select {
       font-size: 20px;
-      color: #2C3136;
       font-family: 'Rubik', sans-serif;
-      font-weight: 400; }
-    header .header-inner .part-left .cont-tel .tel {
-      font-family: 'Rubik', sans-serif;
-      font-weight: 700;
-      font-size: 24px;
-      color: #18B794; }
-    header .header-inner .part-left .lang {
-      width: 55px;
-      height: 55px;
-      margin-top: 30px; }
-      header .header-inner .part-left .lang .select {
+      font-weight: 500;
+      text-align: end; }
+      header .part-left .lang .select a {
+        color: #2C3136; }
+      header .part-left .lang .select svg {
+        margin-left: 7px; }
+    header .part-left .lang .list {
+      display: none;
+      text-align: end;
+      padding-top: 10px; }
+      header .part-left .lang .list .item-list {
         font-size: 20px;
         font-family: 'Rubik', sans-serif;
-        font-weight: 500;
-        text-align: end; }
-        header .header-inner .part-left .lang .select a {
+        font-weight: 500; }
+        header .part-left .lang .list .item-list a {
           color: #2C3136; }
-        header .header-inner .part-left .lang .select svg {
-          margin-left: 7px; }
-      header .header-inner .part-left .lang .list {
-        display: none;
-        text-align: end;
-        padding-top: 10px; }
-        header .header-inner .part-left .lang .list .item-list {
-          font-size: 20px;
-          font-family: 'Rubik', sans-serif;
-          font-weight: 500; }
-          header .header-inner .part-left .lang .list .item-list a {
-            color: #2C3136; }
-      header .header-inner .part-left .lang .list:hover {
-        display: block; }
-      header .header-inner .part-left .lang .select:hover + .list {
-        display: block; }
+    header .part-left .lang .list:hover {
+      display: block; }
+    header .part-left .lang .select:hover + .list {
+      display: block; }
 
 section.slider-top {
-  height: 797px; }
+  position: relative;
+  height: 786px; }
   section.slider-top .slide {
     width: 100%;
     height: 100%; }
     section.slider-top .slide .item img {
       width: 1920px;
       height: 785px; }
+  section.slider-top .section-inner {
+    width: 792px;
+    height: 339px;
+    position: absolute;
+    right: 50%;
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
+    top: 20%;
+    text-align: center;
+    z-index: 10; }
+    section.slider-top .section-inner .stamp {
+      position: absolute;
+      left: 0;
+      top: 0; }
+    section.slider-top .section-inner .title {
+      margin-top: 77px;
+      width: 570px;
+      text-transform: uppercase;
+      color: #FFF;
+      font-size: 80px;
+      font-family: 'Rubik', sans-serif;
+      font-weight: 400; }
+    section.slider-top .section-inner .title-margin {
+      margin-top: 0px; }
+    section.slider-top .section-inner .parts {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      padding-left: 200px;
+      padding-top: 20px; }
+      section.slider-top .section-inner .parts .buttons {
+        width: 300px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between; }
+        section.slider-top .section-inner .parts .buttons .button {
+          width: 135px;
+          height: 55px;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          cursor: pointer;
+          background-image: linear-gradient(195.44deg, #17B794 0.2%, #22257B 132.69%);
+          color: #090B24;
+          font-size: 18px;
+          font-family: 'Rubik', sans-serif;
+          font-weight: 400; }
+          section.slider-top .section-inner .parts .buttons .button:nth-child(2) {
+            background-image: none;
+            background-color: #FFF; }
