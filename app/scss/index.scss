@@ -1,4 +1,4 @@
-
+/*----------------------------------------------------------Header-------------------------------------------------*/
 header {
   .header-inner {
     height: 100px;
@@ -87,17 +87,18 @@ header {
           }
     }
   }
-
+  /*----------------------------------------------------------Header-------------------------------------------------*/
+  /*----------------------------------------------------Section Slider Top-------------------------------------------------------*/
 section.slider-top{
   position: relative;
-  height: 786px;
+  height: 777px;
   .slide{
     width: 100%;
     height: 100%;
     .item{
         img{
           width: 1920px;
-          height: 785px;
+          height: 777px;
         }
     }
   }
@@ -131,7 +132,7 @@ section.slider-top{
           align-items: center;
           justify-content: center;
           padding-left: 200px;
-              padding-top: 20px;
+          margin-top: 20px;
           .buttons{
               width: 300px;
               display: flex;
@@ -156,3 +157,115 @@ section.slider-top{
           }
       }
   }
+  /*----------------------------------------------------Section Slider Top-------------------------------------------------------*/
+
+  /*----------------------------------------------------Section Services-------------------------------------------------------*/
+  section.services{
+    height: 1234px;
+    .section-inner{
+      max-width: 1495px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding-top: 30px;
+        .boxes{
+          height: 174px;
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 214px;
+          .box{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .text{
+              font-size: 24px;
+              @include f-m;
+              color:#0D0F3B
+            }
+          }
+        }
+        .parts{
+          .part{
+            display: flex;
+            justify-content: space-between;
+            .right-part{
+              width:580px ;
+              .title{
+                color: #17B794;
+                font-size: 48px;
+                @include f-r;
+                & span{
+                  color: #22257B;
+                  margin-left: 20px;
+                }
+              }
+              .content{
+                .content-text{
+                  font-size: 18px;
+                  color: #090B24;
+                  @include f-r;
+                }
+                ul{
+                  li{
+                    font-size: 18px;
+                    color: #090B24;
+                    @include f-r;
+                    margin-bottom: 10px;
+                    &:nth-child(1){
+                      margin-top: 20px;
+                    }
+                    &:last-child{
+                      margin-bottom: 0px;
+                    }
+                  }
+                }
+
+              }
+            }
+          }
+        }
+        .boxes-bottom{
+          display: flex;
+          justify-content: space-around;
+          align-items: flex-end;
+          width: 1061px;
+          margin: 0 auto;
+          margin-top: 90px;
+            .box{
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              .icon{
+                margin-bottom: 10px;
+              }
+              .text{
+                font-size: 18px;
+                color: #090B24;
+                @include f-m;
+              }
+            }
+        }
+    }
+  }
+  /*----------------------------------------------------Section Servosec-------------------------------------------------------*/
+
+    /*----------------------------------------------------Section Before After-------------------------------------------------------*/
+section.before-after{
+  .slider{
+    display: flex;
+    justify-content: space-between;
+    .juxtapose {
+      z-index: 2;
+  
+      .jx-arrow.jx-right {
+        animation: move-right 2s infinite;
+      }
+  
+      .jx-arrow.jx-left {
+        animation: move-left 2s infinite;
+      }
+  }
+  }
+}

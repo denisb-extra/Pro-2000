@@ -18,6 +18,9 @@
 	<script src="plugins/fancybox/jquery.fancybox.js"></script> 
 	
 	<script src="plugins/scrollreveal/scrollreveal.js"></script> 
+
+	<link rel="stylesheet" href="plugins/juxtapose/css/juxtapose.css">
+	<script src='plugins/juxtapose/js/juxtapose.js'></script>
 </head>
 <body>
 	<header>
@@ -133,8 +136,129 @@
 		</div>
 	</section>
 
+	<section class="services">
+		<div class="section-inner">
+			<div class="boxes">
+				<div class="box">
+					<div class="icon">
+						<img src="images/service1.png" alt="">
+					</div>
+					<p class="text">ניקוי שטיחים</p>
+				</div>
+				<div class="box">
+					<div class="icon">
+						<img src="images/service2.png" alt="">
+					</div>
+					<p class="text">ניקוי ריפודים</p>
+				</div>
+				<div class="box">
+					<div class="icon">
+						<img src="images/service3.png" alt="">
+					</div>
+					<p class="text">הברקה קריסטלית</p>
+				</div>
+				<div class="box">
+					<div class="icon">
+						<img src="images/service4.png" alt="">
+					</div>
+					<p class="text">טיפול בהצפות</p>
+				</div>
+				<div class="box">
+					<div class="icon">
+						<img src="images/service5.png" alt="">
+					</div>
+					<p class="text">תחזוקה חודשית</p>
+				</div>
+			</div>
+
+			<div class="parts">
+				<div class="part part-text">
+					<div class="right-part">
+						<p class="title"><span>מקצוענים 2000</span>אודות</p>
+						<div class="content">
+							<p class="content-text">אנו מתמחים בניקוי שטיחים וריפודים במגזר העסקי והמוסדי מזה 25 שנה, משתמשים במיטב המכונות והחומרים, על מנת להגיע לתוצאה הטובה ביותר. התקשרו אלי עוד היום ותקבלו שירות מקצועי ויחס אישי.</p>
+							<ul style="list-style-image: url('images/Stroke2.svg');">
+								<li>טיפול נקודתי בכתמים ע"י חומרים יעודיים.</li>
+								<li>קרצוף עם מקרצפות 3 מברשות בשילוב דטרגנט ת. חוץ</li>
+								<li>שטיפה ושאיבה יסודית של השטיח ע"י מכונות הזרקה יניקה רבות עוצמה 400 PSI.</li>
+								<li>ניטרול ריחות רעים</li>
+								<li>טיפול בנזקי מים ואש</li>
+							</ul>
+							<p class="button">קרא עוד</p>
+						</div>
+					</div>
+					<div class="part-img-left">
+						<img src="images/office.png" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="boxes-bottom">
+				<div class="box">
+					<div class="icon">
+						<img src="images/choise1.png" alt="">
+					</div>
+					<p class="text">ניקוי שטיחים</p>
+				</div>
+				<div class="box">
+					<div class="icon">
+						<img src="images/choise2.png" alt="">
+					</div>
+					<p class="text">ניקוי ריפודים</p>
+				</div>
+				<div class="box">
+					<div class="icon">
+						<img src="images/choise3.png" alt="">
+					</div>
+					<p class="text">הברקה קריסטלית</p>
+				</div>
+				<div class="box">
+					<div class="icon">
+						<img src="images/choise4.png" alt="">
+					</div>
+					<p class="text">טיפול בהצפות</p>
+				</div>
+				<div class="box">
+					<div class="icon">
+						<img src="images/choise5.png" alt="">
+					</div>
+					<p class="text">תחזוקה חודשית</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="before-after">
+		<div class="heder">
+			<h2 class="title">גלרייה לפני ואחרי</h2>
+			<p class="header-text">לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית גולר מונפרר סובר</p>
+		</div>
+		<div class="slider">
+			<div class="slider-size">
+				<div class="juxtapose">
+					<img src="images/cleaning.jpeg" alt="A cat" />
+					<img src="images/cleaning2.jpg" alt="A bear"/>
+				</div>
+			</div>
+			<div class="slider-size">
+				<div class="juxtapose">
+					<img src="images/cleaning.jpeg" alt="A cat" />
+					<img src="images/cleaning2.jpg" alt="A bear"/>
+				</div>
+			</div>
+			<div class="slider-size">
+				<div class="juxtapose">
+					<img src="images/cleaning.jpeg" alt="A cat" />
+					<img src="images/cleaning2.jpg" alt="A bear"/>
+				</div>
+			</div>
+		</div>
+		<div class="button-more">
+			<p class="button"></p>
+		</div>
+	</section>
 	<script>
 		$(document).ready(function ($) {
+			juxtapose.scanPage();
+
 			$('.owl-carousel').owlCarousel({
 				loop:true,
 				items: 1,
