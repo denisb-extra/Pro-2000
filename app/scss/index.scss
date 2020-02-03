@@ -772,7 +772,7 @@ section.before-after {
         }
         .slider-text{
           height: 29px;
-          width: inherit;
+          width: 462px;
           position: absolute;
           bottom: 0;
           background-color: #FFF;
@@ -803,6 +803,18 @@ section.before-after {
         cursor: pointer;
       }
   }
+  @media only screen and (max-width: 1366px){
+    .slider-before{
+      width:100%;
+      max-width: 1300px;
+      .slider-size{
+        width: 410px;
+        .slider-text{
+          width: 410px;
+        }
+      }
+    }
+  }
   @media only screen and (max-width: 1024px){
     .slider-before{
       .slider-size:nth-child(3){
@@ -812,20 +824,19 @@ section.before-after {
   }
   @media only screen and (max-width: 768px){
     .slider-before{
-      .slider-size:nth-child(2){
-        display: none;
+      .slider-size{
+        width:100%;
+        .slider-text{
+          width: 100%;
+        }
+        &:nth-child(2){
+          display: none;
+        }
       }
     }
   }
   @media only screen and (max-width: 500px){
     height: 816px;;
-    .slider-before{
-      .slider-size{
-        .slider-text{
-          width: 100%;
-        }
-      }
-    }
       .button-more{
         height: 110px;
       }

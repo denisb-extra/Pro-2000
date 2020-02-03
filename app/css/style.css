@@ -718,7 +718,7 @@ section.before-after {
                   animation: move-left 2s infinite; }
       section.before-after .slider-before .slider-size .slider-text {
         height: 29px;
-        width: inherit;
+        width: 462px;
         position: absolute;
         bottom: 0;
         background-color: #FFF;
@@ -758,17 +758,27 @@ section.before-after {
           -ms-flex-align: center;
               align-items: center;
       cursor: pointer; }
+  @media only screen and (max-width: 1366px) {
+    section.before-after .slider-before {
+      width: 100%;
+      max-width: 1300px; }
+      section.before-after .slider-before .slider-size {
+        width: 410px; }
+        section.before-after .slider-before .slider-size .slider-text {
+          width: 410px; } }
   @media only screen and (max-width: 1024px) {
     section.before-after .slider-before .slider-size:nth-child(3) {
       display: none; } }
   @media only screen and (max-width: 768px) {
-    section.before-after .slider-before .slider-size:nth-child(2) {
-      display: none; } }
+    section.before-after .slider-before .slider-size {
+      width: 100%; }
+      section.before-after .slider-before .slider-size .slider-text {
+        width: 100%; }
+      section.before-after .slider-before .slider-size:nth-child(2) {
+        display: none; } }
   @media only screen and (max-width: 500px) {
     section.before-after {
       height: 816px; }
-      section.before-after .slider-before .slider-size .slider-text {
-        width: 100%; }
       section.before-after .button-more {
         height: 110px; } }
 
