@@ -47,6 +47,37 @@ $small-w: 500px;
 	font-family: 'Rubik', sans-serif;
 	font-weight: 700;
 }
+
+@font-face{
+	font-family: 'FbSpoiler-Bold';
+	src: url('../fonts/FbSpoiler-Bold.otf') format('opentype');
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face{
+	font-family: 'FbSpoiler-Regular';
+	src:url('../fonts/FbSpoiler-Regular.otf') format('opentype');
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face{
+	font-family: 'FbSpoiler-Light';
+	src:url('../fonts/FbSpoiler-Light.otf') format('opentype');
+	font-weight: 300;
+	font-style: normal;
+}
+@mixin fb-b {
+	font-family: 'FbSpoiler-Bold', sans-serif;
+	font-weight: 700;
+}
+@mixin fb-r {
+	font-family: 'FbSpoiler-Regular', sans-serif;
+	font-weight: 400;
+}
+@mixin fb-l {
+	font-family: 'FbSpoiler-Light', sans-serif;
+	font-weight: 300;
+}
 /* /Fonts */
 
 

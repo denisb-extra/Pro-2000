@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="67px" height="47px" viewBox="0 0 67 47" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>Group 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0 67 0 67 47 0 47"></polygon>
+        <linearGradient x1="109.858631%" y1="21.2031112%" x2="0%" y2="86.2684274%" id="linearGradient-3">
+            <stop stop-color="#17B794" offset="0%"></stop>
+            <stop stop-color="#22257B" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="צור-קשר" transform="translate(-442.000000, -927.000000)">
+            <g id="Group-3" transform="translate(442.000000, 927.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-2"></g>
+                <path d="M26.8220125,33.5635693 L26.8220125,13.4362207 L44.2612823,23.5001575 L26.8220125,33.5635693 Z M65.6191537,7.35414074 C64.847065,4.47856525 62.5839273,2.21130275 59.7140586,1.43700032 C54.4713376,0 33.4990914,0 33.4990914,0 C33.4990914,0 12.5276836,0 7.28454342,1.38240544 C4.47000358,2.15607793 2.15195615,4.47898521 1.37955311,7.35414074 C0,12.6065885 0,23.5001575 0,23.5001575 C0,23.5001575 0,34.4477964 1.37955311,39.6457543 C2.15268968,42.5210148 4.41467475,44.7880673 7.28496258,45.5623697 C12.5830124,47 33.4999298,47 33.4999298,47 C33.4999298,47 54.4713376,47 59.7140586,45.6174896 C62.5843464,44.8435021 64.847065,42.5764496 65.619992,39.7009791 C66.9997222,34.4477964 66.9997222,23.5550673 66.9997222,23.5550673 C66.9997222,23.5550673 67.0546644,12.6065885 65.6191537,7.35414074 L65.6191537,7.35414074 Z" id="Fill-1" fill="url(#linearGradient-3)" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>
