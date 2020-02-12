@@ -66,6 +66,7 @@ section.services  {
     height: 1540px;
     background-color: transparent;
     .section-inner{
+      padding: 0 30px;
       background-color: #FFF;
       max-width: 1920px;
       height: 1400px;
@@ -80,6 +81,7 @@ section.services  {
             flex-basis: 48%;
           }
           .right-part{
+            flex-basis: 44%;
             .content{
               margin-top: 30px;
               .content-text:nth-child(3){
@@ -164,9 +166,9 @@ section.services  {
       }
     }
     @media only screen and (max-width: 1024px){
-      height: 1820px;
+      height: 1870px;
       .section-inner{
-        height: 1690px;
+        height: 1730px;
         .about-work{
           height: 958px;
           flex-direction: column;
@@ -176,6 +178,14 @@ section.services  {
           .text{
             width: 100%;
             text-align: center;
+          }
+        }
+        .parts{
+          margin-top: 50px;
+          .part{
+            .part-img-left{
+              align-self: center;
+            }
           }
         }
       }
@@ -194,6 +204,9 @@ section.services  {
               }
             }
           }
+        }
+        .about-work{
+          height: 900px;
         }
       }
     }

@@ -812,31 +812,41 @@ section.box{
       }
     }
       @media only screen and (max-width: 1024px) {
-        height: 550px ;
+        height: 620px ;
         .section-inner {
+          height: 520px;
           padding: 0 40px;
           .parts {
             .part {
               flex-basis: 50%;
+              height: 470px;
               .right-part {
                 .title {
-                  font-size: 22px;
+                  font-size: 55px;
+                  width: 288px;
+                  line-height: 40px;
+                  span{
+                    margin-left: 0;
+                  }
                 }
-
                 .content {
                   margin-top: 11px;
                   .content-text {
                     font-size: 16px;
                   }
                   ul {
+                    margin-top: 20px;
                     li {
                       font-size: 16px;
                     }
                   }
                   .button{
-                    margin-top: 15px;
+                    margin-top: 30px;
                   }
                 }
+              }
+              .part-img-left{
+                align-self: flex-start;
               }
             }
           }
@@ -942,13 +952,6 @@ section.box{
             .part {
               height: 760px;
               .right-part {
-                .title {
-                  font-size: 55px;
-                  width: 288px;
-                  span{
-                    margin-left: 0;
-                  }
-                }
                 .content {
                   height: 390px;
                   .title {
@@ -1127,9 +1130,9 @@ section.before-after {
       width:100%;
       max-width: 980px;
       .slider-size{
-        width: 410px;
+        width: 470px;
         .slider-text{
-          width: 410px;
+          width: 470px;
         }
       }
     }
