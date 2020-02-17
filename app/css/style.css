@@ -611,13 +611,14 @@ section.services {
               margin-left: 20px; }
           section.services .section-inner .parts .part .right-part .content {
             margin-top: 28px; }
-            section.services .section-inner .parts .part .right-part .content .content-text {
+            section.services .section-inner .parts .part .right-part .content p {
               font-size: 18px;
               color: #090B24;
               font-family: 'Rubik', sans-serif;
               font-weight: 400; }
             section.services .section-inner .parts .part .right-part .content ul {
               list-style-position: inside;
+              list-style-image: url("../images/Stroke2.svg");
               margin-top: 36px; }
               section.services .section-inner .parts .part .right-part .content ul li {
                 font-size: 18px;

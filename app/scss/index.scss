@@ -605,7 +605,7 @@ section.box{
 
             .content {
               margin-top: 28px;
-              .content-text {
+              p {
                 font-size: 18px;
                 color: #090B24;
                 @include f-r;
@@ -613,6 +613,7 @@ section.box{
 
               ul {
                 list-style-position: inside;
+                list-style-image: url("../images/Stroke2.svg");
                 margin-top: 36px;
                 li {
                   font-size: 18px;
