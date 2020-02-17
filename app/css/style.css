@@ -542,7 +542,7 @@ section.box {
         font-size: 24px;
         font-family: 'Rubik', sans-serif;
         font-weight: 500;
-        color: #0D0F3B;
+        color: #090B24;
         margin-top: 15px; }
   @media only screen and (max-width: 1024px) {
     section.box {
@@ -1610,15 +1610,17 @@ section.services.about {
         section.services.about .section-inner .about-work .description-slider.owl-carousel {
           position: relative; }
           section.services.about .section-inner .about-work .description-slider.owl-carousel .owl-nav .owl-prev {
-            color: red;
+            color: #17B794;
             position: absolute;
-            top: 50%;
-            right: 0; }
+            top: 40%;
+            right: -5%;
+            font-size: 24px; }
           section.services.about .section-inner .about-work .description-slider.owl-carousel .owl-nav .owl-next {
-            color: red;
+            color: #17B794;
             position: absolute;
-            top: 50%;
-            left: 0; }
+            top: 40%;
+            left: -5%;
+            font-size: 24px; }
       section.services.about .section-inner .about-work .text {
         width: 40%; }
         section.services.about .section-inner .about-work .text .title {
@@ -1770,6 +1772,18 @@ section.services.about.inner {
       color: #22257B;
       font-family: 'Rubik', sans-serif;
       font-weight: 400; }
+  section.services.about.inner .section-inner .about-work .description-slider.owl-carousel .owl-nav .owl-prev {
+    color: #17B794;
+    position: absolute;
+    top: 40%;
+    right: -5%;
+    font-size: 24px; }
+  section.services.about.inner .section-inner .about-work .description-slider.owl-carousel .owl-nav .owl-next {
+    color: #17B794;
+    position: absolute;
+    top: 40%;
+    left: -5%;
+    font-size: 24px; }
   section.services.about.inner .section-inner .parts {
     margin-top: 70px; }
     section.services.about.inner .section-inner .parts .part .part-img-left {
@@ -1845,6 +1859,18 @@ section.section-clients.inner {
     background-color: #F3F3F3; }
     section.section-clients.inner .section-inner .slider-clients .item .clients-reviews .button {
       background-color: #FFF; }
+    section.section-clients.inner .section-inner .slider-clients.owl-carousel .owl-nav .owl-prev {
+      color: #17B794;
+      position: absolute;
+      top: 40%;
+      right: -5%;
+      font-size: 24px; }
+    section.section-clients.inner .section-inner .slider-clients.owl-carousel .owl-nav .owl-next {
+      color: #17B794;
+      position: absolute;
+      top: 40%;
+      left: -5%;
+      font-size: 24px; }
     section.section-clients.inner .section-inner .clients-logo {
       background-color: #FFF;
       max-width: 1034px;

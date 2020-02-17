@@ -146,16 +146,18 @@ section.services  {
             position: relative;
             .owl-nav{
               .owl-prev{
-              color: red;
+                color: #17B794;
                 position: absolute;
-                top: 50%;
-                right: 0;
+                top: 40%;
+                right: -5%;
+                font-size: 24px;
               }
               .owl-next{
-                color:red;
+                color:#17B794;
                 position: absolute;
-                top: 50%;
-                left: 0;
+                top: 40%;
+                left: -5%;
+                font-size: 24px;
               }
             }
           }
@@ -387,6 +389,26 @@ section.services{
               }
             }
           }
+          .description-slider{
+            &.owl-carousel{
+              .owl-nav{
+                .owl-prev{
+                  color: #17B794;
+                  position: absolute;
+                  top: 40%;
+                  right: -5%;
+                  font-size: 24px;
+                }
+                .owl-next{
+                  color:#17B794;
+                  position: absolute;
+                  top: 40%;
+                  left: -5%;
+                  font-size: 24px;
+                }
+              }
+            }
+          }
         }
         .parts{
           margin-top: 70px;
@@ -532,6 +554,24 @@ section.section-clients{
             }
           }
         }
+          &.owl-carousel{
+            .owl-nav{
+              .owl-prev{
+                color: #17B794;
+                position: absolute;
+                top: 40%;
+                right: -5%;
+                font-size: 24px;
+              }
+              .owl-next{
+                color:#17B794;
+                position: absolute;
+                top: 40%;
+                left: -5%;
+                font-size: 24px;
+              }
+            }
+          }
       }
       .clients-logo{
         background-color: #FFF;
