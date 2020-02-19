@@ -666,6 +666,8 @@ section.box{
         margin: 0 auto;
         position: absolute;
         bottom: -93px;
+        left: 50%;
+        transform: translateX(-50%);
         box-shadow: 0px 0px 48px 0px rgba(0, 0, 0, 0.25);
 
         .boxes-right {
@@ -761,7 +763,7 @@ section.box{
                 }
                 .content {
                   margin-top: 11px;
-                  .content-text {
+                  p {
                     font-size: 16px;
                   }
                   ul {
@@ -1232,20 +1234,32 @@ section.section-clients{
           max-width: 1306px;
           height: 91px;
           display: flex;
-          justify-content: space-between;
+          justify-content: center;
           align-items: center;
-          .button{
+          .item{
             cursor: pointer;
-            img{
-              filter: grayscale(100%);
-              height: 50px;
-              opacity: 0.5;
-              &:hover{
-                filter: grayscale(0);
-                opacity: 1;
-              }
+            margin: 0 20px;
+              img{
+                filter: grayscale(100%);
+                height: 50px;
+                opacity: 0.5;
+                width: auto;
+                &:hover{
+                  filter: grayscale(0);
+                  opacity: 1;
+                }
               }
             }
+          &.owl-carousel{
+            .current{
+              .item{
+                img{
+                  filter: grayscale(0);
+                  opacity: 1;
+                }
+              }
+            }
+          }
         }
     }
   }
@@ -1463,7 +1477,7 @@ footer{
             justify-content: center;
             align-items: center;
             margin-top: 59px;
-              p{
+              .tel{
                 color: #FFF;
                 font-size: 24px;
                 @include f-m
@@ -1564,7 +1578,7 @@ footer{
               }
             }
             .tel-now{
-              p{
+              .tel{
                 font-size: 20px;
               }
             }
@@ -1577,7 +1591,7 @@ footer{
               font-size: 31px;
             }
             .tel-now{
-              p{
+              .tel{
                 font-size: 16px;
               }
             }
