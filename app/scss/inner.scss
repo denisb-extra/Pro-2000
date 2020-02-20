@@ -379,13 +379,16 @@ section.services{
       .section-inner{
         .about-work{
           .text{
-            .title{
-              font-size: 72px;
-              color: #17B794;
-              @include f-r;
-              span{
-                color: #22257B;
+            p{
+              &.title{
+                font-size: 72px;
+                color: #17B794;
                 @include f-r;
+                margin-top: 0;
+                span{
+                  color: #22257B;
+                  @include f-r;
+                }
               }
             }
           }
@@ -456,7 +459,6 @@ section.services{
       }
       @media only screen and(max-width: 1440px) {
         .section-inner{
-          //height: 1400px;
           .parts{
             .part{
               .part-img-left{
@@ -467,9 +469,7 @@ section.services{
         }
       }
       @media only screen and(max-width: 1024px){
-        //height: 1620px;
         .section-inner{
-          //height: 1600px;
           .about-work{
             margin-top: 20px;
             .description-slider{
@@ -506,8 +506,10 @@ section.services{
         .section-inner{
           .about-work{
             .text{
-              .title{
-                font-size: 55px;
+              p{
+               & .title{
+                 font-size: 55px;
+               }
               }
             }
           }
@@ -520,17 +522,9 @@ section.services{
         }
       }
       @media only screen and(max-width: 375px){
-        //height: 2050px;
         .section-inner{
-          //height: 2030px;
           .parts{
-            //height: 900px;
             .part{
-              .right-part{
-                .content{
-                  //height: 590px;
-                }
-              }
               .part-img-left{
                 height: 900px;
               }
