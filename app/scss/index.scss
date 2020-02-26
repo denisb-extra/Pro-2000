@@ -87,27 +87,29 @@ header {
         }
         .list{
           display: none;
-          text-align: end;
+          text-align: center;
           padding: 10px 5px;
+          padding-bottom: 0;
           .item-list{
             font-size: 20px;
             padding: 10px 0;
             @include f-m;
             a{
               color: #2C3136;
+              transition: 0.5s;
             }
             &:hover a{
-              color: #FFF;
+              color: #18B794;
             }
           }
         }
         .list:hover{
           display: block;
-          background-color: rgba(151, 151, 151, 0.5);
+          background-color: #fff;
         }
         .select:hover + .list {
           display: block;
-          background-color: rgba(151, 151, 151, 0.5);
+          background-color: #fff;
         }
       }
       .tel-mobile{
@@ -458,6 +460,7 @@ section.slider-top{
       .section-inner{
         width: 760px;
         height: 270px;
+    
         .title{
           font-size: 67px;
         }
@@ -471,27 +474,30 @@ section.slider-top{
     }
     @media only screen and (max-width: 500px){
       height: 400px;
+      .stamp{
+          width: 100px;
+          left: 10px;
+          bottom: 10px;
+        }
       .section-inner{
         width: 100%;
         height: 250px;
         top: 10%;
-        .stamp{
-          width: 200px;
-        }
+        
         .title{
           width: 100%;
-          font-size: 30px;
+          font-size: 50px;
         }
         #typed{
           width: 100%;
-          font-size: 35px;
+          font-size: 55px;
         }
         .typed-cursor{
-          font-size: 35px;
+          font-size: 55px;
           color: #FFF;
         }
         .parts{
-          bottom: 10%;
+
           width: 200px;
           .buttons{
             .button{
@@ -528,6 +534,8 @@ section.box{
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      background-color: #F3F3F3;
+      transition: 0.5s;
       img{
         width: 100%;
       }
@@ -658,6 +666,7 @@ section.box{
 
           .part-img-left {
             flex-basis: 64%;
+            margin-right: 25px;
             img {
               width: 100%;
             }
@@ -1082,7 +1091,7 @@ section.before-after {
     padding-bottom: 30px;
     .header {
       .title {
-        font-size: 55px;
+        font-size: 50px;
       }
       .header-text{
         font-size: 15px;
@@ -1574,8 +1583,9 @@ footer{
             }
           }
           @media only screen and (max-width: 500px){
+            
               .title{
-                font-size: 31px;
+                font-size: 35px;
               }
               .subtitle{
                 font-size: 35px;
@@ -1587,24 +1597,18 @@ footer{
               }
             }
             .tel-now{
-              .tel{
-                font-size: 20px;
+              padding: 0 10px;
+              font-size: 20px;
+              .txt {
+                display: none;
               }
+              span {
+                margin-right: 0;
+              }
+         
             }
           }
-          @media only screen and (max-width: 375px){
-            .title{
-              font-size: 28px;
-            }
-            .subtitle{
-              font-size: 31px;
-            }
-            .tel-now{
-              .tel{
-                font-size: 16px;
-              }
-            }
-          }
+
         }
     }
   .footer-bottom{
@@ -1613,6 +1617,7 @@ footer{
     align-items: center;
       .section-inner{
         max-width: 1920px;
+
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
@@ -1634,7 +1639,7 @@ footer{
       height: 80px;
       .section-inner{
         width: 100%;
-        max-width: 375px;
+        
         .info{
           text-align: center;
           .copy{
@@ -1646,6 +1651,18 @@ footer{
         }
         .part-right{
           display: none;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width : 500px) {
+    .contact {
+      .section-inner {
+        padding-top: 105px;
+        .subtitle {
+          text-align: center;
+          font-size: 24px;
         }
       }
     }

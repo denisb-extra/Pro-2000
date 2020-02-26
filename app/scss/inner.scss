@@ -20,11 +20,15 @@ section.top-inner{
       font-size: 72px;
       @include f-r
     }
-    .breadcrumb_last{
-      color: #FFF;
-      font-size: 18px;
-      @include f-m
+    .subtitle {
+       color: #22257b;
+      .breadcrumb_last, a{
+        color: #FFF;
+        font-size: 18px;
+        @include f-m
+      }
     }
+    
     a{
       color: #FFF;
       font-size: 18px;
@@ -196,12 +200,17 @@ section.services  {
         padding: 90px 30px 150px 30px;
         .about-work{
           flex-direction: column;
+
           .description-slider{
             width: 100%;
           }
           .text{
             width: 100%;
             text-align: center;
+
+            p.title {
+              font-size: 45px !important;
+            }
           }
         }
         .parts{
@@ -643,14 +652,12 @@ section.section-clients{
               @include f-b
             }
             .button{
-              width: 270px;
-              height: 55px;
+              text-align: center;
+              padding: 20px 35px;
               background-image: linear-gradient(223deg, #35DCC6 0%, #22257B 100%);
-              border-radius: 28px 38px 38px 35px;
+              border-radius: 200px;
               color: #FFF;
-              display: flex;
-              justify-content: center;
-              align-items: center;
+              cursor: pointer;
             }
           }
         }
@@ -1046,7 +1053,7 @@ section.top-inner{
   }
 }
 
-section.services{
+section.services {
   &.about{
     &.post{
       padding-bottom: 65px;
