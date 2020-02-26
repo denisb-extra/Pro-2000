@@ -319,8 +319,15 @@
             loop:true,
             items: 1,
             dots:true,
-            nav:true,
+            nav:false,
             navText : ["<i class=\"fa fa-chevron-right\"></i>","<i class=\"fa fa-chevron-left\"></i>"],
+            responsive:{
+                769:{
+                    nav:true,
+                    navText : ["<i class=\"fa fa-chevron-right\"></i>","<i class=\"fa fa-chevron-left\"></i>"],
+                }
+            }
+
         });
     });
 

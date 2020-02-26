@@ -120,18 +120,18 @@
                 <p>תצטנפל בלינדו למרקל אס לכימפו, דול, צוט ומעיוט - לפתיעם ברשג - ולתיעם גדדיש. קוויז דומור ליאמום בלינך רוגצה. לפמעט מוסן מנת. הועניב היושבב שערש שמחויט - שלושע ותלברו חשלו שעותלשך וחאית נובש ערששף. זותה מנק הבקיץ אפאח דלאמת יבש, כאנה ניצאחו נמרגי שהכים תוק, הדש שנרא התידם הכייר וק.בלינך רוגצה. לפמעט מוסן מנת. הועניב היושבב שערש שמחויט - שלושע ותלברו חשלו שעותלשך וחאית נובש ערששף. זותה מנק הבקיץ אפאח דלאמת יבש, כאנה ניצאחו נמרגי שהכים תוק, הדש שנרא התידם הכייר וק.</p>
             </div>
             <div class="description-slider">
-                <div class="img-slide">
+                <a href="#" class="img-slide">
                     <img src="images/video.png" alt="">
                     <div class="play"><img src="images/play.png" alt=""></div>
-                </div>
-                <div class="img-slide">
+                </a>
+                <a href="#" class="img-slide">
                     <img src="images/video.png" alt="">
                     <div class="play"><img src="images/play.png" alt=""></div>
-                </div>
-                <div class="img-slide">
+                </a>
+                <a href="#" class="img-slide">
                     <img src="images/video.png" alt="">
                     <div class="play"><img src="images/play.png" alt=""></div>
-                </div>
+                </a>
             </div>
         </div>
         <div class="parts">
@@ -400,8 +400,14 @@
             loop:true,
             items: 1,
             dots:true,
-            nav:true,
+            nav:false,
             navText : ["<i class=\"fa fa-chevron-right\"></i>","<i class=\"fa fa-chevron-left\"></i>"],
+            responsive: {
+                1025: {
+                    nav: true,
+                    navText: ["<i class=\"fa fa-chevron-right\"></i>", "<i class=\"fa fa-chevron-left\"></i>"],
+                }
+            }
         });
 
         $('.slider-clients').addClass("owl-carousel");
@@ -410,8 +416,15 @@
             loop:true,
             items: 1,
             dots:true,
-            nav:true,
+            nav:false,
             navText : ["<i class=\"fa fa-chevron-right\"></i>","<i class=\"fa fa-chevron-left\"></i>"],
+            responsive: {
+                769: {
+                    nav: true,
+                    navText: ["<i class=\"fa fa-chevron-right\"></i>", "<i class=\"fa fa-chevron-left\"></i>"],
+                }
+            }
+
         });
     });
 

@@ -42,9 +42,11 @@ header {
         justify-content:space-around;
         align-items: center;
         .icon{
-          color: #2C3136;
           .fa{
-            font-size: 28px;
+            background-image: linear-gradient(219deg, #17B794 0%, #22257B 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: #17B794;
           }
         }
       }
@@ -71,7 +73,7 @@ header {
         width: 55px;
         height: 55px;
         margin-top: 30px;
-        z-index: 2;
+        z-index: 3;
         .select{
           font-size: 20px;
           @include f-m;
@@ -86,20 +88,26 @@ header {
         .list{
           display: none;
           text-align: end;
-          padding-top: 10px;
+          padding: 10px 5px;
           .item-list{
             font-size: 20px;
+            padding: 10px 0;
             @include f-m;
             a{
               color: #2C3136;
+            }
+            &:hover a{
+              color: #FFF;
             }
           }
         }
         .list:hover{
           display: block;
+          background-color: rgba(151, 151, 151, 0.5);
         }
         .select:hover + .list {
           display: block;
+          background-color: rgba(151, 151, 151, 0.5);
         }
       }
       .tel-mobile{
@@ -310,31 +318,47 @@ header {
   /*----------------------------------------------------Section Slider Top-------------------------------------------------------*/
 section.slider-top{
   position: relative;
+  height: 680px;
+  overflow-x: hidden;
   .stamp{
     position: absolute;
     left: 5%;
     bottom:5%;
     transform: scale(1);
+    z-index: 3;
+  }
+  .background{
+    height: 100%;
+    position: absolute;
+    top: 0;
     z-index: 2;
+    left: 50%;
+    transform: translateX(-50%);
+    pointer-events: none;
   }
   .slider{
-    width: 100%;
     height: 100%;
-    .item{
-      position: relative;
-      overflow-y: hidden;
-        img{
-          max-width: 1920px;
-          height: 680px;
-          &:nth-child(3){
+    z-index: 1;
+    .data{
+      display: none;
+    }
+    .owl-item {
+      height: 100%;
+      overflow: hidden;
+      .item{
+        height: 100%;
+          img {
+            height: 100%;
+            width: auto;
             position: absolute;
             top: 0;
-            height: 890px;
+            left: 50%;
+            transform: translateX(-50%);
           }
-        }
-        .data{
-          display: none;
-        }
+      }
+    }
+    .owl-stage-outer, .owl-stage-inner, .owl-stage{
+      height: 100%;
     }
   }
   .section-inner{
@@ -359,7 +383,12 @@ section.slider-top{
         text-align: center;
         color: #FFF;
         font-size: 142px;
-        @include fb-b
+        @include fb-b;
+        display: inline;
+      }
+      .typed-cursor{
+        font-size: 142px;
+        color: #FFF;
       }
       .parts{
         display: flex;
@@ -410,25 +439,11 @@ section.slider-top{
           }
       }
       @media only screen and (max-width: 1024px) {
+        height: 510px;
         .stamp{
           width: 180px;
           left: 10%;
           bottom: 10%;
-        }
-        .slider{
-          .item{
-            img{
-              height: 100%;
-              &:nth-child(3){
-                position: absolute;
-                top: 0;
-                height: 627px;
-              }
-            }
-            .data{
-              display: none;
-            }
-          }
         }
         .section-inner{
           top: 10%;
@@ -440,13 +455,6 @@ section.slider-top{
         left: 0;
         bottom: 0;
       }
-      .slider{
-        .item{
-          img{
-
-          }
-        }
-      }
       .section-inner{
         width: 760px;
         height: 270px;
@@ -456,10 +464,13 @@ section.slider-top{
         #typed{
           font-size: 67px;
         }
+        .typed-cursor{
+          font-size: 67px;
+        }
       }
     }
     @media only screen and (max-width: 500px){
-      height: 280px;
+      height: 400px;
       .section-inner{
         width: 100%;
         height: 250px;
@@ -473,26 +484,19 @@ section.slider-top{
         }
         #typed{
           width: 100%;
-          font-size: 30px;
+          font-size: 35px;
+        }
+        .typed-cursor{
+          font-size: 35px;
+          color: #FFF;
         }
         .parts{
-          bottom: 40%;
+          bottom: 10%;
           width: 200px;
           .buttons{
             .button{
               height: 45px;
               width: 90px;
-            }
-          }
-        }
-      }
-      .slider{
-        height: 280px;
-        .item{
-          img{
-            height: 280px;
-            &:nth-child(3){
-              height: 367px;
             }
           }
         }
@@ -560,11 +564,15 @@ section.box{
     height: auto;
     .boxes{
       .box{
-        flex-basis: 100%;
+        flex-basis: 50%;
         height: 170px;
+        &:last-child{
+          display: none;
+        }
       }
     }
   }
+
 }
 /*----------------------------------------------------Section Boxes-------------------------------------------------------*/
 
@@ -722,20 +730,19 @@ section.box{
       }
     }
 
-    @media only screen and (max-width: 1440px) {
+    @media only screen and (max-width: 1540px) {
       .section-inner {
+        max-width: 1400px;
         .parts {
           .part {
             .right-part {
-              flex-basis: 43%;
+              flex-basis: 45%;
             }
-
             .part-img-left {
-              flex-basis: 57%;
+              flex-basis: 53%;
             }
           }
         }
-
         .boxes-bottom {
           max-width: 1400px;
           .boxes-right {
@@ -766,10 +773,15 @@ section.box{
                   p {
                     font-size: 16px;
                   }
-                  ul {
+                  ul{
                     margin-top: 20px;
+                    list-style-image:none ;
                     li {
                       font-size: 16px;
+                      background-image: url(../images/Stroke2.svg);
+                      background-repeat: no-repeat;
+                      background-position: right top 1px;
+                      padding-right: 20px;
                     }
                   }
                   .button{
@@ -881,8 +893,10 @@ section.box{
                   .title {
                     font-size: 16px;
                   }
-                  ul li {
-                    font-size: 16px;
+                  ul{
+                    li {
+                      font-size: 16px;
+                    }
                   }
                   .button{
                     margin-top: 30px;
@@ -944,7 +958,6 @@ section.before-after {
   .slider-before {
     width: 100%;
     max-width: 1525px;
-    height: 418px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -953,15 +966,9 @@ section.before-after {
       .slider-size {
         width: 700px;
         .juxtapose {
-          z-index: 2;
-          height: 389px;
-          .jx-slider{
-            height: 389px;
-          }
           .jx-arrow.jx-right {
             animation: move-right 2s infinite;
           }
-
           .jx-arrow.jx-left {
             animation: move-left 2s infinite;
           }
@@ -1215,7 +1222,7 @@ section.section-clients{
     .clients-logo{
       width: 100%;
       max-width: 1525px;
-      height: 140px;
+      padding: 30px 0;
       background-color: #F3F3F3;
       box-shadow: 0px 10px 28px rgba(0, 0, 0, 0.3);
       display: flex;
@@ -1332,7 +1339,8 @@ section.section-clients{
         .clients-logo{
           max-width: 700px;
           .section-inner{
-            .button{
+            flex-wrap: wrap;
+            .item{
               img{
                 height: 30px;
               }
@@ -1342,7 +1350,7 @@ section.section-clients{
       }
   }
   @media only screen and (max-width: 500px){
-    padding:20px 0 60px 0;
+    padding:20px 0 150px 0;
     .section-inner{
       .header{
         .title{
@@ -1355,16 +1363,23 @@ section.section-clients{
         }
       }
       .clients-logo{
-        height: 70px;
         max-width: 400px;
-        bottom: -30px;
+        bottom: -70px;
         .section-inner{
-          .button{
+          .item{
             img{
               height: 20px;
             }
           }
         }
+      }
+    }
+  }
+  @media only screen and (max-width: 414px){
+    padding:20px 0 90px 0;
+    .section-inner{
+      .clients-logo{
+        padding: 10px 0;
       }
     }
   }
@@ -1377,7 +1392,6 @@ section.section-clients{
       }
       .clients-logo{
         max-width: 360px;
-
       }
     }
   }
@@ -1471,11 +1485,12 @@ footer{
             justify-content: center;
             align-items: center;
             margin-top: 59px;
-              .tel{
-                color: #FFF;
-                font-size: 24px;
-                @include f-m
-              }
+            color: #FFF;
+            font-size: 24px;
+            @include f-m;
+            span{
+              margin-right: 15px;
+            }
           }
           .footer-list {
             margin-top: 35px;
@@ -1502,7 +1517,7 @@ footer{
                       color: #fff;
                       transition: 0.5s;
                       &:hover {
-                        color: #EE6E6F;
+                        color: #090B24;
                       }
                     }
                   }

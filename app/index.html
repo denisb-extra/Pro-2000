@@ -23,7 +23,8 @@
 	<link rel="stylesheet" href="plugins/juxtapose/css/juxtapose.css">
 	<script src='plugins/juxtapose/js/juxtapose.js'></script>
 
-	<script src="https://cdn.jsdelivr.net/jquery.typeit/4.4.0/typeit.min.js"></script>
+	<script src="plugins/typedJs/typed.js"></script>
+
 </head>
 <body>
 	<header>
@@ -66,10 +67,10 @@
 			<div class="part-left">
 				<div class="cont-icons">
 					<a href="#" class="icon">
-						<img src="images/youtube.png" alt="">
+						<i class="fa fa-youtube-play" aria-hidden="true"></i>
 					</a>
 					<a href="#" class="icon">
-						<img src="images/facebook.png" alt="">
+						<i class="fa fa-youtube-play" aria-hidden="true"></i>
 					</a>
 				</div>
 				<div class="lang">
@@ -111,42 +112,32 @@
 			<div class="item">
 				<div class="data">
 					לבתי מלון
+
 				</div>
 				<img src="images/slide-room-top.png" alt="">
-				<img src="images/back_slider.png" alt="">
+			</div>
+			<div class="item">
+				<div class="data">
+					לבתי מלון
+
+				</div>
+				<img src="images/slide-room-top.png" alt="">
 			</div>
 			<div class="item">
 				<div class="data">
 					לבתי מלון
 				</div>
 				<img src="images/slide-room-top.png" alt="">
-				<img src="images/back_slider.png" alt="">
-			</div>
-			<div class="item">
-				<div class="data">
-					לבתי מלון
-				</div>
-				<img src="images/slide-room-top.png" alt="">
-				<img src="images/back_slider.png" alt="">
-			</div>
-			<div class="item">
-				<div class="data">
-					לבתי מלון
-				</div>
-				<img src="images/slide-room-top.png" alt="">
-				<img src="images/back_slider.png" alt="">
 			</div>
 		</div>
+		<img src="images/back_slider.png" alt="" class="background">
 		<div class="section-inner">
-<!--			<img src="images/main_logo.png" alt="" class="stamp">-->
 			<p class="title">המקצוענים בניקוי שטיחים</p>
 			<div id="typed"></div>
 			<div class="parts">
 				<div class="buttons">
 					<p class="button">לגלרייה</p>
-					<!-- <p class="button mobile">תיקון ספות ושטיחים</p> -->
 					<p class="button">ראה עוד</p>
-					<!-- <p class="button mobile">ניקוי ספות ושטיחים</p> -->
 				</div>
 			</div>
 		</div>
@@ -418,12 +409,10 @@
 						<input type="submit" value="שליחה" class="wpcf7-form-control wpcf7-submit submit-button">
 					</form>
 				</div>
-				<div class="tel-now">
-					<a href="tel:0552488" class="tel">
+				<a href="#" class="tel-now">
 						או חייגו למספר
 						<span>5444458</span>
-					</a>
-				</div>
+				</a>
 				<div class="footer-list">
 						<div class="columns">
 							<div class="col">
@@ -540,7 +529,7 @@
 				$('.slider-clients').trigger('to.owl.carousel',$(this).index())
 			});
 
-		$('.slider').addClass("owl-carousel");
+			$('.slider').addClass("owl-carousel");
 			$('.slider').addClass("owl-theme");
 			$('.slider').owlCarousel({
 				animateOut: 'fadeOut',
@@ -563,29 +552,23 @@
 					index += count;
 				}
 				var txt = $('.slider-top .item').eq(index).find('.data').text();
-				console.log(txt);
-				$('#typed').typeIt({
-					speed:70,
-					autoStart:true,
-					cursorSpeed:900,
-					breakLines:false,
+				typed.destroy();
+				typed = new Typed ('#typed', {
+					strings:[txt, ''],
+					backDelay: 3500,
+					typeSpeed:70,
+					backSpeed:70,
 				})
-				.tiType(txt)
-				.tiPause(4500)
-				.tiDelete();
+
 			});
 
 			var txt = $('.slider-top .item').eq(0).find('.data').text();
-			$('#typed').typeIt({
-				speed:70,
-				autoStart:true,
-				cursorSpeed:900,
-				breakLines:false
+			var typed = new Typed ('#typed', {
+				strings:[txt, ''],
+				backDelay: 3500,
+				typeSpeed:70,
+				backSpeed:70,
 			})
-					.tiType(txt)
-					.tiPause(4500)
-					.tiDelete()
-					.tiCursor(20);
 
 		});
 	</script>
