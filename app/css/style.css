@@ -778,57 +778,56 @@ section.services {
         section.services .section-inner .boxes-bottom .boxes-right .title {
           font-size: 35px; } }
   @media only screen and (max-width: 1024px) {
-    section.services .section-inner {
-      padding: 0 40px; }
-      section.services .section-inner .parts .part {
-        -ms-flex-preferred-size: 50%;
-            flex-basis: 50%; }
-        section.services .section-inner .parts .part .right-part .title {
-          font-size: 55px;
-          width: 288px;
-          line-height: 40px; }
-          section.services .section-inner .parts .part .right-part .title span {
-            margin-left: 0; }
-        section.services .section-inner .parts .part .right-part .content {
-          margin-top: 11px; }
-          section.services .section-inner .parts .part .right-part .content p {
-            font-size: 16px; }
-          section.services .section-inner .parts .part .right-part .content ul {
-            margin-top: 20px;
-            list-style-image: none; }
-            section.services .section-inner .parts .part .right-part .content ul li {
-              font-size: 16px;
-              background-image: url(../images/Stroke2.svg);
-              background-repeat: no-repeat;
-              background-position: right top 1px;
-              padding-right: 20px; }
-          section.services .section-inner .parts .part .right-part .content .button {
-            margin-top: 30px; }
-        section.services .section-inner .parts .part .part-img-left {
-          -ms-flex-item-align: start;
-              align-self: flex-start; }
-      section.services .section-inner .boxes-bottom {
-        max-width: 980px; }
-        section.services .section-inner .boxes-bottom .boxes-right .title {
-          font-size: 40px; }
-        section.services .section-inner .boxes-bottom .boxes-right .subtitle {
-          font-size: 35px; }
-      section.services .section-inner .boxes-list .box {
-        height: 86px;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-                justify-content: space-between; }
-        section.services .section-inner .boxes-list .box .icon img {
-          width: 40px; }
-        section.services .section-inner .boxes-list .box:nth-child(1) .icon img {
-          width: 30px; } }
+    section.services .section-inner .parts .part {
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%; }
+      section.services .section-inner .parts .part .right-part .title {
+        font-size: 55px;
+        width: 288px;
+        line-height: 40px; }
+        section.services .section-inner .parts .part .right-part .title span {
+          margin-left: 0; }
+      section.services .section-inner .parts .part .right-part .content {
+        margin-top: 11px; }
+        section.services .section-inner .parts .part .right-part .content p {
+          font-size: 16px; }
+        section.services .section-inner .parts .part .right-part .content ul {
+          margin-top: 20px;
+          list-style-image: none; }
+          section.services .section-inner .parts .part .right-part .content ul li {
+            font-size: 16px;
+            background-image: url(../images/Stroke2.svg);
+            background-repeat: no-repeat;
+            background-position: right top 1px;
+            padding-right: 20px; }
+        section.services .section-inner .parts .part .right-part .content .button {
+          margin-top: 30px; }
+      section.services .section-inner .parts .part .part-img-left {
+        -ms-flex-item-align: start;
+            align-self: flex-start; }
+    section.services .section-inner .boxes-bottom {
+      max-width: none;
+      padding: 0 10px; }
+      section.services .section-inner .boxes-bottom .boxes-right .title {
+        font-size: 40px; }
+      section.services .section-inner .boxes-bottom .boxes-right .subtitle {
+        font-size: 35px; }
+    section.services .section-inner .boxes-list .box {
+      height: 86px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      section.services .section-inner .boxes-list .box .icon img {
+        width: 40px; }
+      section.services .section-inner .boxes-list .box:nth-child(1) .icon img {
+        width: 30px; } }
   @media only screen and (max-width: 768px) {
     section.services .section-inner .parts .part {
       -webkit-box-orient: vertical;
@@ -838,7 +837,6 @@ section.services {
       section.services .section-inner .parts .part .right-part .content .button {
         margin-top: 30px; }
     section.services .section-inner .boxes-bottom {
-      max-width: 700px;
       height: 130px;
       bottom: -63px; }
       section.services .section-inner .boxes-bottom .boxes-right {
@@ -1023,11 +1021,11 @@ section.before-after {
       padding-top: 120px; }
       section.before-after .slider-before {
         width: 100%;
-        max-width: 700px; }
+        max-width: 728px; }
         section.before-after .slider-before .slider-size {
-          width: 700px; }
+          width: 728px; }
           section.before-after .slider-before .slider-size .slider-text {
-            width: 700px; }
+            width: 728px; }
           section.before-after .slider-before .slider-size:nth-child(2) {
             display: none; } }
   @media only screen and (max-width: 500px) {
@@ -1037,8 +1035,7 @@ section.before-after {
       section.before-after .header .title {
         font-size: 50px; }
       section.before-after .header .header-text {
-        font-size: 15px;
-        padding: 0 30px; }
+        font-size: 15px; }
       section.before-after .button-more {
         margin-top: 45px; }
       section.before-after .slider-before {
@@ -1053,10 +1050,8 @@ section.before-after {
           section.before-after .slider-before .slider-size .juxtapose .jx-slider {
             height: 340px; } }
   @media only screen and (max-width: 375px) {
-    section.before-after .header {
-      padding: 30px 30px 0 30px; }
-      section.before-after .header .header-text {
-        padding: 0 0; }
+    section.before-after .header .header-text {
+      padding: 0 0; }
     section.before-after .slider-before {
       max-width: 320px; }
       section.before-after .slider-before .slider-size {
@@ -1207,17 +1202,15 @@ section.section-clients {
   @media only screen and (max-width: 1024px) {
     section.section-clients {
       padding-top: 30px; }
-      section.section-clients .section-inner .slider-clients {
-        padding: 0 30px; }
-        section.section-clients .section-inner .slider-clients .item .clients-reviews .title {
-          font-size: 16px; }
-        section.section-clients .section-inner .slider-clients .item .clients-reviews .description {
-          font-size: 13px; }
-        section.section-clients .section-inner .slider-clients .item .clients-reviews .button {
-          height: 60px;
-          width: 150px; }
-          section.section-clients .section-inner .slider-clients .item .clients-reviews .button img {
-            width: 30px; }
+      section.section-clients .section-inner .slider-clients .item .clients-reviews .title {
+        font-size: 16px; }
+      section.section-clients .section-inner .slider-clients .item .clients-reviews .description {
+        font-size: 13px; }
+      section.section-clients .section-inner .slider-clients .item .clients-reviews .button {
+        height: 60px;
+        width: 150px; }
+        section.section-clients .section-inner .slider-clients .item .clients-reviews .button img {
+          width: 30px; }
       section.section-clients .section-inner .clients-logo {
         max-width: 980px; }
         section.section-clients .section-inner .clients-logo .section-inner {
@@ -1256,8 +1249,7 @@ section.section-clients {
         font-size: 50px; }
       section.section-clients .section-inner .header .header-text {
         font-size: 15px;
-        margin-bottom: 30px;
-        padding: 0 20px; }
+        margin-bottom: 30px; }
       section.section-clients .section-inner .clients-logo {
         max-width: 400px;
         bottom: -70px; }
@@ -1269,8 +1261,6 @@ section.section-clients {
       section.section-clients .section-inner .clients-logo {
         padding: 10px 0; } }
   @media only screen and (max-width: 375px) {
-    section.section-clients .section-inner .header .header-text {
-      padding: 0 20px; }
     section.section-clients .section-inner .clients-logo {
       max-width: 360px; } }
 
@@ -1339,7 +1329,12 @@ footer .contact {
           font-size: 18px;
           font-family: 'Rubik', sans-serif;
           font-weight: 400; }
-        footer .contact .section-inner .wpcf7 input:-ms-input-placeholder {
+        footer .contact .section-inner .wpcf7 input::-moz-placeholder {
+          color: #FFF;
+          font-size: 18px;
+          font-family: 'Rubik', sans-serif;
+          font-weight: 400; }
+        footer .contact .section-inner .wpcf7 input::-ms-input-placeholder {
           color: #FFF;
           font-size: 18px;
           font-family: 'Rubik', sans-serif;
@@ -1435,13 +1430,11 @@ footer .contact {
           footer .contact .section-inner .wpcf7 input {
             width: 286px; } }
     @media only screen and (max-width: 1024px) {
-      footer .contact .section-inner {
-        padding: 150px 40px 90px 40px; }
-        footer .contact .section-inner .wpcf7 {
-          width: 100%;
-          max-width: 1220px; }
-          footer .contact .section-inner .wpcf7 input {
-            width: 186px; } }
+      footer .contact .section-inner .wpcf7 {
+        width: 100%;
+        max-width: 1220px; }
+        footer .contact .section-inner .wpcf7 input {
+          width: 186px; } }
     @media only screen and (max-width: 768px) {
       footer .contact .section-inner .wpcf7 input {
         width: 500px; }
@@ -1578,7 +1571,8 @@ section.top-inner {
 section.services.about {
   background-color: transparent; }
   section.services.about .section-inner {
-    padding: 120px 30px 150px 30px;
+    padding-top: 120px;
+    padding-bottom: 150px;
     background-color: #FFF;
     max-width: 1920px;
     position: relative;
@@ -1677,7 +1671,7 @@ section.services.about {
       font-size: 17px; } }
   @media only screen and (max-width: 1024px) {
     section.services.about .section-inner {
-      padding: 90px 30px 150px 30px; }
+      padding-top: 90px; }
       section.services.about .section-inner .about-work {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -1714,7 +1708,8 @@ section.services.about {
     section.services.about {
       padding-bottom: 0; }
       section.services.about .section-inner {
-        padding: 60px 30px 80px 30px; }
+        padding-top: 60px;
+        padding-bottom: 80px; }
         section.services.about .section-inner .parts .part .part-img-left {
           margin-top: 10px; }
           section.services.about .section-inner .parts .part .part-img-left .text {
@@ -1904,12 +1899,14 @@ section.services.about.inner {
       font-size: 24px; }
   @media only screen and (max-width: 1440px) {
     section.services.about.inner .section-inner {
-      padding: 120px 30px 150px 50px; }
+      padding-top: 120px;
+      padding-bottom: 150px; }
       section.services.about.inner .section-inner .parts .part .part-img-left {
         background-size: contain; } }
   @media only screen and (max-width: 1024px) {
     section.services.about.inner .section-inner {
-      padding: 40px 30px 90px 50px; }
+      padding-top: 40px;
+      padding-bottom: 90px; }
       section.services.about.inner .section-inner .about-work {
         margin-top: 20px; }
         section.services.about.inner .section-inner .about-work .description-slider {
@@ -1918,7 +1915,8 @@ section.services.about.inner {
         background-position: center; } }
   @media only screen and (max-width: 768px) {
     section.services.about.inner .section-inner {
-      padding: 40px 30px 70px 30px; }
+      padding-top: 40px;
+      padding-bottom: 70px; }
       section.services.about.inner .section-inner .parts .part .part-img-left {
         background-position: center;
         width: 100%; }
@@ -2219,6 +2217,18 @@ section.blog {
         section.blog .section-inner .about .content:hover .subtitle {
           max-height: 110px;
           margin-bottom: 30px; }
+        section.blog .section-inner .about .content.content-img1 {
+          background-image: url("../images/blog1.png");
+          background-repeat: no-repeat;
+          background-size: cover; }
+        section.blog .section-inner .about .content.content-img2 {
+          background-image: url("../images/blog1.png");
+          background-repeat: no-repeat;
+          background-size: cover; }
+        section.blog .section-inner .about .content.content-img3 {
+          background-image: url("../images/blog1.png");
+          background-repeat: no-repeat;
+          background-size: cover; }
   @media only screen and (max-width: 1024px) {
     section.blog .section-inner .about .content {
       width: 48%; } }
@@ -2338,7 +2348,8 @@ section.services.about.post {
     section.services.about.post {
       padding-bottom: 0; }
       section.services.about.post .section-inner {
-        padding: 90px 30px 20px 30px; }
+        padding-top: 50px;
+        padding-bottom: 20px; }
         section.services.about.post .section-inner .parts .part .part-img-left {
           float: top; }
         section.services.about.post .section-inner .parts .part .right-part .title {
@@ -2361,7 +2372,8 @@ section.services.about.post {
       width: 200px; } }
   @media only screen and (max-width: 480px) {
     section.services.about.post .section-inner {
-      padding: 30px 30px 40px 30px; }
+      padding-top: 30px;
+      padding-bottom: 40px; }
       section.services.about.post .section-inner .boxes-bottom {
         height: 90px; }
         section.services.about.post .section-inner .boxes-bottom .boxes-list .info .call {
@@ -2499,7 +2511,12 @@ section.contact-us {
               font-size: 18px;
               font-family: 'Rubik', sans-serif;
               font-weight: 400; }
-            section.contact-us .section-inner .contact .inner .wpcf7 input:-ms-input-placeholder {
+            section.contact-us .section-inner .contact .inner .wpcf7 input::-moz-placeholder {
+              color: #FFF;
+              font-size: 18px;
+              font-family: 'Rubik', sans-serif;
+              font-weight: 400; }
+            section.contact-us .section-inner .contact .inner .wpcf7 input::-ms-input-placeholder {
               color: #FFF;
               font-size: 18px;
               font-family: 'Rubik', sans-serif;

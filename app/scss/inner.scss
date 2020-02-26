@@ -68,7 +68,8 @@ section.services  {
   &.about{
     background-color: transparent;
     .section-inner{
-      padding: 120px 30px 150px 30px;
+      padding-top: 120px;
+      padding-bottom: 150px;
       background-color: #FFF;
       max-width: 1920px;
       position: relative;
@@ -197,7 +198,7 @@ section.services  {
     }
     @media only screen and (max-width: 1024px){
       .section-inner{
-        padding: 90px 30px 150px 30px;
+        padding-top: 90px;
         .about-work{
           flex-direction: column;
 
@@ -246,7 +247,8 @@ section.services  {
     @media only screen and (max-width: 480px){
       padding-bottom:0 ;
       .section-inner{
-        padding: 60px 30px 80px 30px;
+        padding-top: 60px;
+        padding-bottom: 80px;
         .parts{
           .part{
             .part-img-left{
@@ -513,7 +515,8 @@ section.services{
       }
       @media only screen and(max-width: 1440px) {
         .section-inner{
-          padding: 120px 30px 150px 50px;
+          padding-top: 120px;
+          padding-bottom: 150px;
           .parts{
             .part{
               .part-img-left{
@@ -525,7 +528,8 @@ section.services{
       }
       @media only screen and(max-width: 1024px){
         .section-inner{
-          padding: 40px 30px 90px 50px;
+          padding-top: 40px;
+          padding-bottom: 90px;
           .about-work{
             margin-top: 20px;
             .description-slider{
@@ -543,7 +547,8 @@ section.services{
       }
       @media only screen and(max-width: 768px){
         .section-inner{
-          padding: 40px 30px 70px 30px;
+          padding-top: 40px;
+          padding-bottom: 70px;
           .parts{
             .part{
               .part-img-left{
@@ -963,6 +968,21 @@ section.blog{
           max-height: 110px;
           margin-bottom: 30px;
         }
+        &.content-img1{
+          background-image: url("../images/blog1.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        &.content-img2{
+          background-image: url("../images/blog1.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        &.content-img3{
+          background-image: url("../images/blog1.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
       }
     }
   }
@@ -1129,7 +1149,8 @@ section.services {
       @media only screen and (max-width: 1024px) {
         padding-bottom: 0;
         .section-inner{
-          padding: 90px 30px 20px 30px;
+          padding-top: 50px;
+          padding-bottom: 20px;
           .parts{
             .part{
               .part-img-left{
@@ -1183,7 +1204,8 @@ section.services {
       }
       @media only screen and (max-width: 480px) {
         .section-inner{
-          padding: 30px 30px 40px 30px;
+          padding-top: 30px;
+          padding-bottom: 40px;
           .boxes-bottom{
             height: 90px;
             .boxes-list{
@@ -1210,10 +1232,6 @@ section.services {
               }
             }
           }
-        }
-      }
-      @media only screen and (max-width: 375px){
-        .section-inner{
         }
       }
     }
