@@ -106,6 +106,34 @@
 		</div>
 	</header>
 
+	<div class="floating-form closed">
+		<div class="button"><img src="images/f-form-button.png" alt=""></div>
+		<div class="form">
+			<div class="heading">
+				<img class="avatar" src="images/f-form-avatar.png" alt="">
+				<div class="text">
+					<p class="line-1">לייעוץ ומידע נוסף</p>
+					<p class="line-2">השאר פרטים</p>
+				</div>
+
+			</div>
+			<div role="form" class="wpcf7" id="wpcf7-f245-o2" lang="he-IL" dir="rtl">
+					<form action="/lp/one/#wpcf7-f245-o2" method="post" class="wpcf7-form contact-form-inner" novalidate="novalidate">
+					<span class="wpcf7-form-control-wrap your-name">
+						<input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="*שם מלא:">
+					</span>
+					<span class="wpcf7-form-control-wrap your-tel">
+						<input type="tel" name="your-tel" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel" aria-required="true" aria-invalid="false" placeholder="*טלפון:">
+					</span>
+					<span class="wpcf7-form-control-wrap your-email">
+						<input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-email" aria-invalid="false" placeholder="דוא״ל:">
+					</span>
+						<input type="submit" value="שליחה" class="wpcf7-form-control wpcf7-submit submit-button">
+					</form>
+				</div>
+		</div>
+	</div>
+
 	<section class="slider-top">
 		<img src="images/main_logo.png" alt="" class="stamp">
 		<div class="slider">
@@ -283,7 +311,10 @@
 						<img src="images/clients.png" alt="">
 					</div>
 					<div class="clients-reviews">
-						<p class="title">משרדי קוקה קולה</p>
+						<p class="title">
+							<span>משרדי קוקה קולה</span>
+							<img src="images/logo_teva.png" alt="">
+						</p>
 						<p class="description">לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית גולר מונפרר סוברט לורם שבצק יהול, לכנוץ בעריר גק ליץ, לפרומי בלוף קינץ תתיח לרעח. לת צשחמי צש בליא, מנסוטו צמלח לביקו ננבי, צמוקו בלוקריה שיצמה ברורק. סחטיר בלובק. </p>
 						<p class="description">תצטנפל בלינדו למרקל אס לכימפו, דול, צוט ומעיוט - לפתיעם ברשג - ולתיעם גדדיש. קוויז דומור ליאמום בלינך רוגצה. לפמעט מוסן מנת. הועניב היושבב שערש שמחויט - שלושע ותלברו חשלו שעותלשך וחאית נובש ערששף. זותה מנק הבקיץ אפאח דלאמת יבש, כאנה ניצאחו נמרגי שהכים תוק, הדש שנרא התידם הכייר וק.</p>
 						<p class="button">
@@ -511,6 +542,10 @@
 
 	<script>
 		$(document).ready(function ($) {
+			$(".floating-form .button, .floating-form .heading").on("click", function(){
+				$(".floating-form").toggleClass("closed");
+			});
+
 			juxtapose.scanPage();
 
 

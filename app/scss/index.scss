@@ -1,3 +1,148 @@
+.floating-form {
+  position: fixed;
+  z-index: 99;
+  left: 0;
+  bottom: 0;
+  .form {
+    background: #ffffff;
+    padding-bottom: 30px;
+    width: 360px;
+    transition: 0.5s;
+    left: 0;
+    bottom: 0;
+  }
+
+  .button {
+    transition: 0.5s;
+    cursor: pointer;
+    bottom: 10px;
+    left: -130px;
+  }
+  
+  &.closed {
+    .form {
+      left: -400px;
+    } 
+    .button {
+      left: 10px;
+    }
+  }
+
+  .heading {
+    background: #F3F3F3;
+    padding: 30px;
+    padding-top: 45px;
+    padding-bottom: 20px;
+    white-space: nowrap;
+    position: relative;
+    text-align: left;
+    .text {
+      display: inline-block;
+      margin-left: 0;
+      margin-right: auto;
+    }
+    .avatar {
+      position: absolute;
+      right: -50px;
+      bottom: 10px;
+    }
+    .line-1 {
+      @include f-b;
+      font-size: 25px;
+      color: #22257B;
+    }
+    .line-2 {
+      @include f-b;
+      font-size: 33px;
+      color: #22257B;
+    }
+  }
+
+  .form, .button {
+    position: absolute;
+  }
+  .wpcf7 {
+    padding: 30px;
+    padding-top: 0;
+    width: 100%;
+
+    input {
+      width: 100%;
+      height: 34px;
+      background-color: transparent;
+      border: none;
+      outline: none;
+      border-bottom: 1px solid #17b794;
+      margin-top: 35px;
+      @include f-r;
+      font-size: 18px;
+      color: #2c3136;
+      @include placeholder-color(#2c3136);
+    }
+
+    .wpcf7-form-control-wrap {
+      display: block;
+    }
+
+    input[type="submit"] {
+      @include f-b;
+      float: left;
+      color: #fff;
+      width: 143px;
+      height: 56px;
+      border: none;
+      cursor: pointer;
+      padding-left: 30px;
+      position: relative;
+      background-color: #17B794;
+      border-radius: 28px;
+      background-image: url("../images/form_button.png");
+      background-size: auto;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-position-x: 10%;
+    }
+    .wpcf7-response-output{
+      border: none;
+      position: absolute;
+      bottom: 11%;
+      right: 0;
+    }
+  }
+
+  @media only screen and (max-width : 600px) {
+    &.closed {
+      .button {
+        bottom: 5px;
+        left: 5px;
+      }
+    }
+    .button {
+      bottom: 5px;
+      left: 5px;
+      img {
+        width: 70px;
+      }
+    }
+    .form {
+      width: 300px;
+    }
+
+    .heading {
+      .avatar {
+        width: 180px;
+      }
+      .line-1 {
+        font-size: 22px;
+      }
+      .line-2 {
+        font-size: 28px;
+      }
+    }
+  }
+}
+
+
 @media only screen and (max-width: 1024px){
   body{
     padding-top: 50px;
@@ -1189,6 +1334,15 @@ section.section-clients{
                       font-size: 24px;
                       @include f-b;
                       color: #22257B;
+                      
+                      img, span {
+                        display: inline-block;
+                        vertical-align: middle;
+                      }
+                      img {
+                        width: 100px;
+                        float: left;
+                      }
                     }
                   }
                   .button{
@@ -1252,13 +1406,12 @@ section.section-clients{
             cursor: pointer;
             margin: 0 20px;
               img{
-                filter: grayscale(100%);
+               
                 height: 50px;
-                opacity: 0.5;
                 width: auto;
+                transition: 0.5s;
                 &:hover{
-                  filter: grayscale(0);
-                  opacity: 1;
+                  transform: scale(1.1);
                 }
               }
             }
